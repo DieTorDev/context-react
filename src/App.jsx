@@ -1,13 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
+import UsersProvider from './providers/CounterProvider';
 import { GlobalStyles } from './styles/GlobalStyles';
-import Router from './router/Router';
 
 const App = () => {
 	return (
-		<BrowserRouter>
+		<UsersProvider>
 			<GlobalStyles />
-			<Router />
-		</BrowserRouter>
+		</UsersProvider>
 	);
 };
 
