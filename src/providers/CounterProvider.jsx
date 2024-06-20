@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { UsersContext } from '../contexts/UsersContext';
 
 const UsersProvider = ({ children }) => {
-	const [activeUser, setActiveUser] = useState(0);
+	const [activeUser, setActiveUser] = useState('none');
 
 	return (
-		<UsersContext.Provider
-			value={[activeUser, setActiveUser]}
-		></UsersContext.Provider>
+		<UsersContext.Provider value={{ activeUser, setActiveUser }}>
+			{children}
+		</UsersContext.Provider>
 	);
 };
 
