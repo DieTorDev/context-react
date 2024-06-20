@@ -1,6 +1,6 @@
 import Header from './components/Header/Header';
 import Users from './components/Users/Users';
-import UsersProvider from './providers/CounterProvider';
+import UsersProvider from './providers/UsersProvider';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {

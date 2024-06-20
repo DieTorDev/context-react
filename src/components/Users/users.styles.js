@@ -15,4 +15,13 @@ const StyledUserCard = styled.article`
 	align-items: center;
 `;
 
-export { StyledUsersContainer, StyledUserCard };
+const StyledUserImg = styled.img`
+	border-radius: 50%;
+`;
+
+const StyledButton = styled.button`
+	width: 80px;
+	height: 30px;
+`;
+
+export { StyledUsersContainer, StyledUserCard, StyledButton, StyledUserImg };
